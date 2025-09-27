@@ -1,0 +1,28 @@
+[project]
+name = "fastrpc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.117.1",
+    "python-multipart>=0.0.20",
+    "requests>=2.32.5",
+    "setuptools>=80.9.0",
+    "uvicorn[standard]>=0.37.0",
+]
+
+[tool.uv.workspace]
+members = [
+    ".",
+    ".",
+    ".",
+]
+
+[tool.uv.sources]
+fastrpc = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "fastrpc",
+]
