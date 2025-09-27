@@ -15,7 +15,7 @@ GITHUB 仓库：[xing-shuyin/fastrpc](https://github.com/xing-shuyin/fastrpc)
 ## 安装
 
 ```bash
-pip install fastrpc
+pip install fastrpc-py
 ```
 
 ## 快速开始
