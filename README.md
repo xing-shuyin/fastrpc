@@ -1,4 +1,5 @@
 # FastRPC
+GITHUB 仓库：[xing-shuyin/fastrpc](https://github.com/xing-shuyin/fastrpc)
 
 一个基于 FastAPI 的轻量级、高性能 RPC（远程过程调用）框架，支持多种数据类型的高效传输。
 
