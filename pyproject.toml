@@ -11,18 +11,3 @@ dependencies = [
     "setuptools>=80.9.0",
     "uvicorn[standard]>=0.37.0",
 ]
-
-[tool.uv.workspace]
-members = [
-    ".",
-    ".",
-    ".",
-]
-
-[tool.uv.sources]
-fastrpc = { workspace = true }
-
-[dependency-groups]
-dev = [
-    "fastrpc",
-]
