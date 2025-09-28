@@ -1,0 +1,26 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // 运行命令行命令. 没有python环境
+      "command": "uv run -m build",
+      "name": "build",
+      "request": "launch",
+      "type": "node-terminal",
+      "cwd": "${workspaceFolder}",
+      "trace": false
+    },
+    {
+      // 运行命令行命令. 没有python环境
+      "command": "uv run twine upload dist/*",
+      "name": "upload",
+      "request": "launch",
+      "type": "node-terminal",
+      "cwd": "${workspaceFolder}",
+      "trace": false
+    }
+  ]
+}

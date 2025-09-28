@@ -1,6 +1,8 @@
 [project]
 name = "fastrpc-py"
-version = "0.1.1"
+version = "0.1.2"
+authors = [{ name = "xingshuyin", email = "xing-shuyin@qq.com" }]
+license = { text = "MIT" }
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -11,3 +13,7 @@ dependencies = [
     "setuptools>=80.9.0",
     "uvicorn[standard]>=0.37.0",
 ]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

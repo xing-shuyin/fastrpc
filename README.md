@@ -285,6 +285,8 @@ python examples/client.py
 本项目采用 MIT 许可证 - 查看 LICENSE 文件了解详情。
 
 ## 更新日志
+### v0.1.2
+- 加速本地文件传输
 
 ### v0.1.0
 - 初始版本发布
