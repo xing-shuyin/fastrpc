@@ -30,6 +30,11 @@ class FastRpc:
                 sig = inspect.signature(func)
                 params = {}
                 for k, v in sig.parameters.items():  # 参数类型还原
+                    if k not in form:
+                        raise HTTPException(
+                            status_code=400, detail=f"缺少参数: {k}, 类型: {v.annotation}"
+                        )
+                    
                     if v.annotation is bytes:
                         file_obj = form[k]  # 直接使用索引访问，而不是 get 方法
                         # 检查是否是 UploadFile 对象
@@ -234,6 +239,8 @@ class FastRpcClient:
             r = self.session.post(
                 self.url + f"/run/{funcname}", data=params, files=files
             )
+            if r.status_code != 200:
+                raise Exception(r.text)
             r_type = self.funs[funcname]["return"]  # 返回类型还原
             if r_type == "bytes":
                 if self.host in localhosts:

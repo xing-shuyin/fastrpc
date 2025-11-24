@@ -21,6 +21,24 @@
       "type": "node-terminal",
       "cwd": "${workspaceFolder}",
       "trace": false
+    },
+    {
+      // 运行命令行命令. 没有python环境
+      "command": "uv run example/server.py ",
+      "name": "server",
+      "request": "launch",
+      "type": "node-terminal",
+      "cwd": "${workspaceFolder}",
+      "trace": false
+    },
+    {
+      // 运行命令行命令. 没有python环境
+      "command": "uv run example/client.py ",
+      "name": "client",
+      "request": "launch",
+      "type": "node-terminal",
+      "cwd": "${workspaceFolder}",
+      "trace": false
     }
   ]
 }
